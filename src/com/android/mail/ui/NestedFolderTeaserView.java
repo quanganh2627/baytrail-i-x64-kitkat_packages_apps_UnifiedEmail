@@ -487,10 +487,7 @@ public class NestedFolderTeaserView extends LinearLayout implements Conversation
                             newHolder.setFolder(folder);
                             mFolderHolders.put(folder.id, newHolder);
 
-                            // We can not support displaying sender info with nested folders
-                            // because it doesn't scale. Disabling it for now, until we can
-                            // optimize it.
-                            // initFolderLoader(getLoaderId(folder.id));
+                            initFolderLoader(getLoaderId(folder.id));
 
                             updateViews(newHolder);
 
