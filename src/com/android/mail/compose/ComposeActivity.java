@@ -2808,9 +2808,9 @@ public class ComposeActivity extends Activity implements OnClickListener, OnNavi
     private void sendOrSave(final boolean save, final boolean showToast) {
         // Check if user is a monkey. Monkeys can compose and hit send
         // button but are not allowed to send anything off the device.
-        if (ActivityManager.isUserAMonkey()) {
-            return;
-        }
+  //      if (ActivityManager.isUserAMonkey()) {
+    //        return;
+      //  }
 
         final Spanned body = mBodyView.getEditableText();
 
